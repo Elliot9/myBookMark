@@ -1,0 +1,37 @@
+{
+	"nodes":[
+		{"id":"63967d360da1e893","type":"text","text":"## Extract Function (提取函式)\n\n應該將意圖和實作分開，函式是一種抽象的基礎元素，意思是說我可以透過好的函示命名，而不用去了解函式內如何實現\n\n簡單來說，就是把實作的內容，拆解各個意圖的函式，並且讓函式回傳一個值，或是可以製作成一筆 ==紀錄==","x":440,"y":-280,"width":545,"height":200,"color":"5"},
+		{"id":"a050a9e7a3d33d7b","type":"text","text":"## Slide Statements (移動陳述式)\n\n將相關的  ==陳述式== 移動到一起的位置\n\n","x":440,"y":0,"width":545,"height":120,"color":"5"},
+		{"id":"e4b68c396e084568","type":"text","text":"## Pull Up Method (提升方法)\n\n將相同子類的方法抽到共用的父類上\n\n","x":440,"y":200,"width":545,"height":120,"color":"5"},
+		{"id":"0746f203bd20f606","type":"text","text":"## Duplicated Code（重複的程式碼）\n\n同一類別中看到兩處以上相同運算式，此時執行 ==Extract Function== ，將呼叫的改成被抽取的函式。\n\n如果是類似但不完全一致的程式碼，評估看看能不能使用 ==Slide Statements== 來整理。\n\n如果重複的段落位於同一個基礎類別的不同子類別，可以使用 ==Pull Up Method==","x":-680,"y":-80,"width":760,"height":200,"color":"6"},
+		{"id":"a2ebb03f00b2e4b4","type":"text","text":"## Mysterious Name （神秘的名稱）\n\n當你無法幫某個東西想出好名稱時，通常代表的是深層的設計不良\n\n最常做的重新命名有\n\n==Change Function Declaration==\n\n==Rename Variable==\n\n==Rename Field==\n","x":-680,"y":-500,"width":540,"height":280,"color":"6"},
+		{"id":"cbe150784f7a6046","type":"text","text":"## Rename Variable (更改變數名稱)\n\n好的變數命名，有很大的程度上可以解釋我要做什麼","x":440,"y":-612,"width":545,"height":117,"color":"5"},
+		{"id":"8d87e256c186583b","type":"text","text":"## Rename Field (更改欄位名稱)\n\n當一個紀錄結構被許過地方廣泛使用，欄位會更是重要","x":440,"y":-452,"width":545,"height":117,"color":"5"},
+		{"id":"77f715b13dcee4ba","type":"text","text":"## 紀錄\n\n單純的資料結構\n\n將資料封裝成簡單的類別物件，建立對應的 __get , __set","x":1480,"y":-360,"width":545,"height":165,"color":"2"},
+		{"id":"1447e075589629b5","type":"text","text":"## 陳述式(Statement)\n\n表示式或運算式，用於命令執行指定的一系列操作，最大的特徵是不會回傳結果","x":1480,"y":-120,"width":545,"height":140,"color":"2"},
+		{"id":"679e5bcf9a418fec","type":"text","text":"## Change Function Declaration (修改函式宣告式)\n\n#### 修改函式名稱\n\n#### 加入參數\n\n#### 將參數改成其中一個屬性\n例如有個函式，原先是判別 Member 的住所是不是來自外國， function isForegin(Member) ，但是實際上所需的只有 Address，那就可以將函式參數調整成 isForeign(Address: Member.Address) ","x":440,"y":-960,"width":620,"height":300,"color":"5"},
+		{"id":"9a098b6f75c0a4ca","type":"text","text":"## Replace Function with Comment (將函式換成命令物件)\n\n與一般函式將較之下，命令可以讓人更靈活控制與表達（但是通常會選擇使用函式而非命令）\n\n建立一個==紀錄==，建立命令函式，讓外部呼叫該 紀錄 執行 命令","x":440,"y":640,"width":700,"height":190,"color":"5"},
+		{"id":"33714cff872b0b4d","type":"text","text":"## Long Function（冗長的函式）\n\n過長的函式會讓人難以理解，也難以更改。\n\n最好的方式是保持短函式，剛開始開發的程式員會認為這種模式只是不斷的委託工作，根本沒有任何計算，但是真正這種方式的好處是 (解釋性 共用性 選擇性)\n\n即使這樣修改會導致，程式碼比原先還要長，但是重點是可以清楚說明程式碼的意圖。 \n長度不是重點，重點是函式  ==“做什麼事\"==  與  ==“如何做事”== 之間的語意距離\n\n多數時候可以直接使用 ==Extract function== \n如果有需多參數或暫時變數妨礙提取，可以使用  ==Replace Function with Comment== 以及 ==Introduce Parameter Object== 與 ==Preserve Whole Object==\n","x":-680,"y":320,"width":760,"height":660,"color":"6"},
+		{"id":"041c9cecdc5a1ddb","type":"text","text":"## Introduce Parameter Object (使用參數物件)\n\n當經常有一群資料項目被傳入不同的函式時，這種資料泥團，可以包裝成一個資料結構","x":440,"y":885,"width":700,"height":135,"color":"5"},
+		{"id":"5f53050fb2648ba1","type":"text","text":"## Preserve Whole Object (保留整個物件)\n\n當從一筆記錄取出一些值，在將這些值傳入一個函式時，可以將那些值，直接替換成整個紀錄本身，讓函式自行取出。\n\n但是相對的，會產生相依性，另外如果有一些程式都使用相同物件的同一組功能子集合，可以使用 ==Extract Class==\n","x":440,"y":1120,"width":700,"height":200,"color":"5"},
+		{"id":"360c1b02f3a399c7","type":"text","text":"## Extract Class (提取類別）\n\n**“類別必須是個清晰的抽象，只應該處理一些明確的功能”** ，隨著時間與功能的增長，如果一個類別責任越來越重，會導致越來越複雜，而越來越脆弱\n\n\n\n","x":440,"y":1380,"width":700,"height":200,"color":"5"}
+	],
+	"edges":[
+		{"id":"db4378880efc912e","fromNode":"0746f203bd20f606","fromSide":"right","toNode":"63967d360da1e893","toSide":"left"},
+		{"id":"a6a26d5bc9e55b46","fromNode":"0746f203bd20f606","fromSide":"right","toNode":"a050a9e7a3d33d7b","toSide":"left"},
+		{"id":"ed540e8bb9fe7acf","fromNode":"63967d360da1e893","fromSide":"right","toNode":"77f715b13dcee4ba","toSide":"left"},
+		{"id":"9ddc05053769e168","fromNode":"a050a9e7a3d33d7b","fromSide":"right","toNode":"1447e075589629b5","toSide":"left"},
+		{"id":"8f38bcb56131ec78","fromNode":"0746f203bd20f606","fromSide":"right","toNode":"e4b68c396e084568","toSide":"left"},
+		{"id":"29e7142cb0dd9ab1","fromNode":"a2ebb03f00b2e4b4","fromSide":"right","toNode":"679e5bcf9a418fec","toSide":"left"},
+		{"id":"77fe14301f3915b2","fromNode":"a2ebb03f00b2e4b4","fromSide":"right","toNode":"cbe150784f7a6046","toSide":"left"},
+		{"id":"b5c578acf1613514","fromNode":"8d87e256c186583b","fromSide":"right","toNode":"77f715b13dcee4ba","toSide":"left"},
+		{"id":"d67c564bf15cbc8f","fromNode":"a2ebb03f00b2e4b4","fromSide":"right","toNode":"8d87e256c186583b","toSide":"left"},
+		{"id":"023e62d1594206a3","fromNode":"33714cff872b0b4d","fromSide":"right","toNode":"63967d360da1e893","toSide":"left"},
+		{"id":"65cbf42255c8939e","fromNode":"33714cff872b0b4d","fromSide":"right","toNode":"9a098b6f75c0a4ca","toSide":"left"},
+		{"id":"b5a073680bc71142","fromNode":"9a098b6f75c0a4ca","fromSide":"right","toNode":"77f715b13dcee4ba","toSide":"left"},
+		{"id":"9416ace9dbb0b959","fromNode":"33714cff872b0b4d","fromSide":"right","toNode":"041c9cecdc5a1ddb","toSide":"left"},
+		{"id":"5973250a21ab6cc8","fromNode":"33714cff872b0b4d","fromSide":"right","toNode":"5f53050fb2648ba1","toSide":"left"},
+		{"id":"550136297cef8ff5","fromNode":"5f53050fb2648ba1","fromSide":"right","toNode":"77f715b13dcee4ba","toSide":"left"},
+		{"id":"b899d2a008e30bd9","fromNode":"5f53050fb2648ba1","fromSide":"left","toNode":"360c1b02f3a399c7","toSide":"left"}
+	]
+}
