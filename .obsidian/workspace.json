@@ -1,0 +1,158 @@
+{
+  "main": {
+    "id": "f40b1d30322a5624",
+    "type": "split",
+    "children": [
+      {
+        "id": "7415eb37584aa295",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d265a8a8ea521798",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "重構的手段.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5d1f853757b17bc4",
+    "type": "split",
+    "children": [
+      {
+        "id": "0a389bbae757ec2f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "18a48450efb8e67f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9ee1b8e17e28ef80",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f604fe308711c988",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "72643b38b16b6a19",
+    "type": "split",
+    "children": [
+      {
+        "id": "b3365154639532a0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da0fd138988d49ea",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "重構的手段.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a6b45c5c723524f0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "重構的手段.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "aeaf3a0150330563",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "27a4ee26e120c896",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "重構的手段.canvas"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "command-palette:開啟命令面板": false
+    }
+  },
+  "active": "18a48450efb8e67f",
+  "lastOpenFiles": [
+    "程式碼異味.canvas",
+    "未命名.md",
+    "重構的手段.canvas"
+  ]
+}
